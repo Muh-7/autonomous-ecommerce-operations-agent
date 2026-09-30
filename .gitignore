@@ -1,0 +1,47 @@
+cat << 'EOF' > .gitignore
+# =========================================
+# Environment & Secrets
+# =========================================
+.env
+.env.local
+*.pem
+*.key
+
+# =========================================
+# Datasets (NEVER push large CSVs to GitHub)
+# =========================================
+Datasets/
+*.csv
+*.zip
+archive.zip
+
+# =========================================
+# Python & Virtual Environments
+# =========================================
+venv/
+env/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# =========================================
+# IDE & OS Files
+# =========================================
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# =========================================
+# Database & Logs
+# =========================================
+*.sqlite
+*.db
+logs/
+*.log
+EOF
